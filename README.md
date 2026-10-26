@@ -15,7 +15,6 @@ The free energy profile (PMF) comes from the **Dynamic Histogram Analysis Method
 - [Output](#output)
 - [Shunt-route model](#shunt-route-model)
 - [Conventions and assumptions](#conventions-and-assumptions)
-- [Test data](#test-data)
 - [References](#references)
 
 ---
@@ -143,15 +142,6 @@ $$
 - **Valid range.** The PMF and D(z) are only reported between the smallest and largest umbrella centres.
 - **Smoothing.** The PMF in `PMF.png` is lightly smoothed. `PMF.xvg` and the kP calculation use the unsmoothed PMF.
 - **Lagtimes** are in trajectory frames, so multiply by the `pullx` output interval to get a time.
-
----
-
-## Test data
-
-| Directory | Contents |
-|-----------|----------|
-| `src/test_data/` | 81 umbrella windows (`umd0`–`umd80`): `.tpr`, `.log` and `pullx.xvg` files |
-| `src/test_data_wat/` | 81 umbrella windows with ready-made `log.dat` / `px.dat` and example `DHAM_Results/` |
 
 ---
 
