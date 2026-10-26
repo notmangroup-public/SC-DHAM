@@ -62,20 +62,6 @@ python src/dham/dham.py -il log.dat -ix px.dat [-watdiff DIFFUSION UNCERTAINTY]
 | `-ix`      | Yes      | Text file listing the matching `pullx.xvg` files, one per line, in the **same order** |
 | `-watdiff` | No       | Diffusion coefficient of the molecule in water and its uncertainty, in cm² s⁻¹ (e.g. `1E-5 1E-6`). Turns on the shunt-route correction. |
 
-### Example
-
-```bash
-cd src/test_data_wat
-python ../dham/dham.py -il log.dat -ix px.dat -watdiff 1E-5 1E-6
-```
-
-To create the list files for a set of windows named `umd0 ... umdN`:
-
-```bash
-ls umd*.log        | sort -V > log.dat
-ls umd*_pullx.xvg  | sort -V > px.dat
-```
-
 ---
 
 ## Input files
